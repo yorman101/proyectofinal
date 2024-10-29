@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: url(imagenes/fondo4-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 60%;
+}
+.comentarios{
+    color: white;
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+    border-top: 10px solid #0fe2e2;
+    margin-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2{
+    color: aquamarine;
+    border-bottom: 1px solid #0fe2e2;
+}
+div.comentarios div.comentario{
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+
+div.comentarios div.comentario span{
+    font-weight: bold;
+}
+div.comentarios div.comentario div.acciones{
+    padding: 10px;
+    text-align: right;
+}
+div.comentarios div.comentario button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    transition: ease .3s all;
+    margin: 0 0.1em;
+}
+div.comentarios div.comentario button:hover{
+    transform:scale(1.1);
+}
+div.comentarios button.borrar{
+    background-color: #0fe2e2;
+}
+div.comentarios button.editar{
+    background-color: #0fe2e2;
+}
+.comentario p{
+    padding: 5px;
+}
+div.btn-add{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+div.btn-add button.añadir{
+    background-color: #0fe2e2;
+    font-size: 50px;
+    border-radius: 2000px;    
+}
+
+div.formulario{
+    width: 50%;
+    margin:0 auto;
+    padding: 20px 0;
+}
+div.formulario input[type=text]
+div.formulario textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    border: 1px solid #cbcbcb;
+}
+div.formulario label{
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+}
+div.formulario input[type=radio]{
+    margin:0 15px 0 5px;
+}
+
+div.formulario input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: none;
+    background: #0fe2e2;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+div.formulario input[type=submit] :hover{
+    transform: scale(1.1);
+}
+@media(max-width:480px) {
+    .comentarios{
+        padding: 0.5em;
+    }
+    .acciones{
+        justify-content: center;
+    }
+    .comentario p{
+        margin: 10px;
+    }
+}
